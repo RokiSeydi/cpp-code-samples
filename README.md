@@ -14,7 +14,7 @@ of chips in their file. Topics covered:
 - debugging;
 3. Guessing game: for this game, you have three attemps to guess the secret number. The game was created to practice: do/while loops, if/else statements 
 and data types
-- Random day generator: to the question: what day does today feel like? the programme replies with a random day. I wanted to practice using: rand() and
+4. Random day generator: to the question: what day does today feel like? the programme replies with a random day. I wanted to practice using: rand() and
 switch statements
-- Passphrase guess: this is another variation of the guessing game. However for this one, I wanted to practice reading from an external file using the <fstream> 
+5. Passphrase guess: this is another variation of the guessing game. However for this one, I wanted to practice reading from an external file using the <fstream> 
 library

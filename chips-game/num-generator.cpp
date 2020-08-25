@@ -52,6 +52,7 @@ do {
             cout << FindPlayerName(playerName, player1Turn) << ", how many chips would you like?" << endl;
 
         cout << "you can take up to "; 
+        
         // if half of the number of chips in my pile is zero (which will be one when the pile is one or less) display one otherwise display the number of chips in pile divided by 2 (.5))
         if (static_cast<int>(MAX_TURN * chipsInPile) == 0) {
             cout << "1 \n";

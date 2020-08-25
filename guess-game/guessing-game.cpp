@@ -2,21 +2,6 @@
 
 using namespace std;
 
-// int main(){
-// int secretNumb = 8;
-// int guess;
-
-// while(secretNumb != guess){
-//     cout << "Enter guess: ";
-//     cin >> guess;
-// }
-
-// cout <<"You guessed right!"<< endl;
-//     return 0;
-// }
-
-// with a do while loop;
-
 int main(){
     int secretNum = 8;
     int guess;

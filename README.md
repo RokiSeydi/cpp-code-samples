@@ -1,7 +1,7 @@
 # cpp-code-samples
 
 a collection of code samples written whilst learning C++.
-The exercises range from easy ones from early beginning to more complex ones.
+The exercises cover different topics and aim to be progressively more complex (however the order of the folders is alphabetical!).
 
 1. Calculator: the programme was created whilst learning: if statements and variables data types
 2. Chips game: most complex game so far. It is a game where two players are assigned a random number of chips. The winner is the one with the least number

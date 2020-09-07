@@ -1,8 +1,16 @@
 #include <iostream>
+#include <fstream>
 #include <ctime>
 #include <stdlib.h>
 
 using namespace std;
+
+
+// struct player
+// {
+//    string playerName;
+//    int playerMove;
+// };
 
 
 // string FindPlayerName(string name[], bool playerTurn);
@@ -18,6 +26,9 @@ const int MAX_CHIPS = 100;
 const float MAX_TURN = .5;
 
 int main(){
+
+ofstream winnerScores;
+winnerScores.open("winner-score-sheet.txt", ios::app);
 
 // when it's true, it's players1's turn, when it's false it's players2's turn
 bool player1Turn = true;
@@ -49,7 +60,7 @@ gameOver = false;
 
 while (gameOver == false) {
 do {
-            cout << FindPlayerName(playerName, player1Turn) << ", how many chips would you like?" << endl;
+        cout << FindPlayerName(playerName, player1Turn) << ", how many chips would you like?" << endl;
 
         cout << "you can take up to "; 
         
@@ -66,11 +77,11 @@ do {
         cout << "there are " << chipsInPile << " left in the pile" <<endl;
         if (chipsInPile == 0) {
             gameOver = true;
-        
             cout << FindPlayerName(playerName, player1Turn) << ", you won!" << endl;
+            winnerScores << "this round winner is: " <<FindPlayerName(playerName, player1Turn) << endl;
         } else {
             player1Turn = !player1Turn;
-        }
+        }       
     }
       cout << "would you like to play again? y/n " << endl;
       cin >> playAgain;
@@ -79,4 +90,3 @@ do {
 
     return 0;
 }
-

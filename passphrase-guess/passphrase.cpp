@@ -15,7 +15,8 @@ int main() {
     string passPhrase;
 
     if(!passwordSheet.fail()){
-        while(passwordSheet >> passPhrase){          
+        while(passwordSheet >> passPhrase)
+        {          
             cout << "the passphrase is " << passPhrase << endl;
             cout << "what is your guess?" <<endl;
             cin >> userGuess;

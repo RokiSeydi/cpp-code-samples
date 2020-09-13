@@ -53,7 +53,8 @@ void myStack::push(int x) {
     // check if the stack is empty or not, if it is we set the starting node to the new node we created 
     if (myStack::startingNode == nullptr) {
         startingNode = n;
-    } else { //if it's not empty we navigate to end of the linked list and we push a new node by creating a new pointer that points
+    } else { 
+    //if it's not empty we navigate to end of the linked list and we push a new node by creating a new pointer that points
     //to a new starting node
         node *currentNode = myStack::startingNode;
         while (true)
@@ -71,18 +72,24 @@ void myStack::push(int x) {
 // last in first out
 int myStack::pop(){
     int requiredValue;
+
     // we are checking if in the list there's only one node. if we had only one
     //node the next one would point to null
+
     if(myStack::startingNode->nextNode == nullptr) {
+
         // in that scenario we are retrieving the only value of node present and set it equal to required value
         requiredValue = myStack::startingNode -> x;
 
         // garbage collection ( we are removing the node) and then we are setting the initial condition as in the struct
+
         delete myStack::startingNode;
         myStack::startingNode = nullptr;
+
         // if we have more than one node, we are going to the end of the linked list and check if the node before
         // the other node is zero. if it is, we gonna extract the value, delete the next node and
         // set it equal to
+        
     } else {
         node *currentNode = myStack::startingNode;
         while(true) {
